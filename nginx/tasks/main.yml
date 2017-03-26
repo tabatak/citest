@@ -1,2 +1,6 @@
 ---
 # tasks file for nginx
+-name: Install nginx.
+  yum: name=nginx
+- command: chkconfig nginx on
+- command: service nginx restart
